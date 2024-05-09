@@ -1,64 +1,77 @@
-![brand](https://github.com/agrosurance/.github/assets/96080203/37d9a525-da4f-4791-86b4-6eb477923cfb)
+![a2f441f3a0ade2bcdebda214a6d82ec7aba4f934_2_1035x426](https://github.com/agrosurance/.github/assets/96080203/5a69e40e-faaf-4615-bb06-1a7bc4ddf7d6)
 
-<h4 style="text-align:center;" align="center">The Agrosurance project is an innovative platform that aims to revolutionize the agriculture industry by providing a transparent, reliable, and decentralized solution for agricultural insurance and liquidity management.</h4>
-
-
-
-## What it Does
-
-Agrosurance enables farmers and agricultural stakeholders to access fair and transparent insurance coverage. The platform calculates insurance premiums and verifies claims using on-chain code stored securely on the blockchain. By fetching real-time data from trusted external sources using Chainlink functions, the platform accurately determines premiums and validates claims based on predefined rules and triggers.
+<h4 style="text-align:center;" align="center">Surity is an innovative insurance platform empowering marketers to craft bespoke policies with transparent premium calculation and streamlined claim validation, fostering trust and confidence in policy transactions.</h4>
 
 
-The platform also offers a staking mechanism where investors can stake their Matic tokens and earn Agrocoin as staking rewards. By participating in the staking program, investors contribute liquidity to the platform and help secure the network. Staking rewards are distributed periodically, providing an incentive for long-term participation and fostering a vibrant community.
 
+## Inspiration
 
-## How we built it
+🌾Experience in Agriculture Insurance: Leveraged insights and lessons from developing Agrosurance, a web3 project focused on agriculture insurance, to inform the creation of Surity.
 
-Agrosurance is comprised of five smart contracts, each serving a specific purpose within the platform:
+🚜 Recognition of Industry Challenges: Acknowledged the challenges faced by farmers and insurers, including issues of accessibility, transparency, and trust within the insurance industry.
 
-- [ ] **AgroCoin**: The AgroCoin smart contract represents the ERC20 token used within the Agrosurance ecosystem. It allows for the transfer and management of AgroCoins among users. The contract also includes governance support, providing a foundation for future protocol governance mechanisms.
+💡 Innovation in Insurance Solutions: Inspired by the potential of web3 technologies, sought to disrupt traditional insurance models by introducing novel solutions for policy creation and management, with a focus on empowering both insurance providers and policyholders.
 
-- [ ] **AgroSuranceLand**: The AgroSuranceLand smart contract is responsible for tokenizing users' land into non-fungible tokens (NFTs) with on-chain metadata. This contract allows for the representation and management of land assets within the platform. Users can tokenize their land and utilize it as collateral for insurance coverage or other purposes within the Agrosurance ecosystem.
+🌐 Empowerment through Technology: Embraced the potential of technology to democratize the insurance market, putting power into the hands of users and fostering a community built on fairness, transparency, and trust.
 
-- [ ] **FundManager**: The FundManager smart contract serves as a centralized repository for managing the funds within the Agrosurance platform. It securely holds the Matic tokens received from the InsuranceManager and the StakingManager contracts. The FundManager ensures proper allocation and distribution of funds for insurance claims, staking rewards, and other financial operations.
+## What it does
 
-- [ ] **StakingManager**: The StakingManager contract enables users to stake their Matic tokens and receive AgroCoins as staking rewards. It handles the staking process, tracks users' staked amounts and rewards, and ensures the proper distribution of AgroCoins to stakers based on predefined rules and mechanisms. This contract incentivizes liquidity provision and community participation within Agrosurance.
+### User-Centric Functionality
 
-- [ ] **InsuranceManager**: The InsuranceManager contract facilitates the insurance-related functionalities within Agrosurance. It allows users to obtain insurance quotes, purchase insurance policies, and file claims. The contract calculates insurance premiums based on predefined algorithms and verifies claim eligibility based on predefined rules. The InsuranceManager plays a critical role in providing transparent and efficient insurance coverage for users' agricultural assets.
+1. The platform serves two primary user roles: insurance providers and policyholders. Insurance providers offer various insurance policies, while policyholders purchase and benefit from these policies.
 
+2. Users have the option to stake in different insurance policies using a unique staking mechanism. For every USD contributed, users receive 1 platform token. They can withdraw their USD at any time.
 
-These smart contracts work together to create a robust and comprehensive platform for agriculture insurance and liquidity management. They tokenize land assets, handle the staking mechanism, manage insurance-related operations, and ensure proper fund allocation within the ecosystem.
+3. Monthly, a fixed amount of “surity tokens” is released to reward participants. 10% of these tokens are retained by the platform, to make profit and no tokens from the stakes / insurees would be taken as a fee, while the remaining tokens are distributed among stakeholders according to their stake ratios.
 
+4. Out of the initial supply, in the first month we will release 20% of the total supply then every consecutive month, we will decrease the released coins by 20% so it will go like, 20%, then 16%, 12.8% and so on…
 
-Through these smart contracts, Agrosurance aims to provide farmers, investors, and other users with a transparent and reliable platform for agricultural risk management and participation in the agrosurance economy.
+5. Marketers play a pivotal role by creating new insurance policies and providing transparent functions for premium calculation and claim validation. These functions are accessible to users, ensuring transparency and trust in the insurance process. Policy providers can also stake in other policies.
 
+### Customized Staking Mechanism and Policy Visibility
 
-## Challenges we ran into
+1. A custom form empowers users to specify conditions to stake in other tokens like Sol, Link, Eth, Trx. These conditions include triggers such as deposit into the pool through premium, deposit through staking, time duration, or general deposit into the pool.
 
-Developing Agrosurance was not without its challenges. Here are the main struggles we encountered and successfully resolved:
+2. Additional conditions, such as specific amounts or ranges of received deposits, are configurable. Users can also specify the percentage of money to be staked and the target destination for their stake.
 
-- [ ] **Learning Curve with Chainlink**: Our initial experience with Chainlink presented a learning curve as we familiarized ourselves with the technology. However, with determination and by utilizing available learning resources, we quickly overcame this hurdle and integrated Chainlink functions effectively.
+3. Each insurance policy page provides visibility into the allocation of pooled funds and details of customized automated investments. Users can track how their stake is utilized and the automated investment strategy implemented for each policy.
 
-- [ ] **Integration Complexity**: Integrating multiple components and functionalities within Agrosurance proved to be time-consuming due to the complexity involved. Despite the challenges, we persevered and successfully integrated the necessary features. However, due to time constraints during the hackathon, we were unable to complete the integration of the Kleros Protocol. Nonetheless, this obstacle has provided us with valuable insights for future development.
+### Application and Developers Section [WIP]
 
-## Accomplishments that we're proud of
+1. Developers have access to a comprehensive API that exposes Surity's functionalities, including policy creation, premium calculation, claim validation, stake management, and more.
 
-We take great pride in the accomplishments we have achieved with Agrosurance. Here are the key aspects we are proud of:
+2. The API documentation will provide a detailed instructions on how to interact with each endpoint, along with sample requests and responses, enabling developers to seamlessly integrate Surity's features into their applications.
 
-- [ ] **Seamless Integration with Chainlink Functions**: Despite being our first time working with Chainlink, we quickly embraced the learning curve and successfully integrated their functions into our platform. This demonstrates our ability to adapt and learn new technologies efficiently.
+3. With access to the API, developers can build their own websites or applications with a customized interface that showcases their policies and brand identity.
 
-- [ ] **Transparency and On-Chain Storage**: By storing the insurance premium calculation and claim verification codes on the blockchain, we have established a transparent and immutable system. This ensures that all participants can access and audit the code, fostering trust and transparency within the platform.
+4. Developers have the flexibility to design and implement user interfaces tailored to their specific requirements, offering a unique and immersive experience for their users.
 
-- [ ] **User-Friendly Interface**: We have invested significant effort into creating an intuitive and user-friendly interface for Agrosurance. Our goal was to make it easy for farmers, investors, and other users to navigate the platform, stake their Matic tokens, and manage their insurance policies effortlessly.
+5. All of the Applications which utilizes the Surity API would be visible to the consumer of Surity on the Application section so that they can easily access it from there.
 
-- [ ] **Addressing Liquidity Concerns**: We have taken a proactive approach to address liquidity concerns within the agrosurance industry. By implementing a staking mechanism, we incentivize investors to contribute liquidity to the platform while earning Agrocoin as rewards. This is a significant achievement in ensuring the sustainability and success of the project.
+## Project Value:
+🪟 Transparency: Blockchain technology ensures transparency by providing a decentralized ledger where all transactions and activities related to policy creation, premium calculation, claim validation, and fund utilization are recorded. This transparency instills trust among users as they can verify how policy marketers are investing funds, validating claims, and generating premium costs without relying on a centralized source.
 
-## What we learned 
+💰Liquidity: Blockchain enables the creation of unique incentives for individuals willing to maintain liquidity for policy marketers. Through a staking system, users can stake tokens for their chosen policies, providing liquidity to the platform. Policy marketers can also choose where to invest the received funds, and this process can be automated using blockchain technology. This liquidity mechanism enhances the accessibility and efficiency of the insurance marketplace.
 
-Throughout the development of Agrosurance, our team has gained valuable knowledge and insights. Here are some of the key learnings we acquired during the project:
+💸Rewards: Blockchain platforms inherently offer mechanisms for rewarding users. In our platform, users who stake tokens, regardless of the policy they choose, will be rewarded with SureCoins, our platform’s native tokens. These rewards are generated from the total initial token supply and are proportionately distributed based on the staking amount. To maintain token value and incentivize participation, tokens will be released monthly, with the percentage of the initial supply decreasing by 20% each month.
 
-- [ ] **Chainlink Integration**: We had the opportunity to explore and integrate Chainlink functions into our platform. This experience taught us about decentralized oracles and how they enable secure and reliable data retrieval and off-chain computations. We learned how to leverage Chainlink to fetch real-world data and integrate it into our smart contracts.
+👩‍💻Secure Function Execution: While function definitions are public, the actual execution occurs in a secure and private server environment managed by us. User details, provided as function arguments, are not stored on the blockchain. Instead, a server executes the functions, signs the outputs, and our smart contract verifies the authenticity of the execution log before accepting premiums. This approach ensures data privacy and security while maintaining the benefits of transparency and decentralization.
 
-- [ ] **Liquidity Management**: Developing the StakingManager and FundManager contracts allowed us to understand the complexities of managing liquidity within a decentralized ecosystem. We learned about the importance of proper fund allocation, transparent reward distribution, and the challenges associated with maintaining adequate liquidity levels.
+## Benefits of Blockchain and Decentralization:
 
-- [ ] **Time Management and Prioritization**: Throughout the project, we faced time constraints and had to prioritize certain features over others. We learned how to effectively manage our time, make informed decisions, and ensure that the core functionalities were implemented within the given timeframe.
+🤝Trust and Reliability: Blockchain’s decentralized nature eliminates the need for a central authority, ensuring trust and reliability in the insurance marketplace. Users can confidently engage with the platform knowing that their transactions and interactions are transparent, immutable, and resistant to tampering or manipulation.
+
+🔐Security: Blockchain technology employs robust cryptographic techniques to secure data and transactions. This enhances the security of sensitive information such as personal details, policy terms, and financial transactions, reducing the risk of fraud or data breaches.
+
+💪Efficiency and Automation: Smart contracts, a key feature of blockchain technology, enable the automation of various processes such as premium calculation, claim validation, and rewards distribution. This streamlines operations, reduces administrative overhead, and ensures timely and accurate execution of contractual agreements.
+
+🤑Incentives and Rewards: By leveraging blockchain’s tokenization capabilities, our platform can incentivize user participation and engagement through rewards and token-based incentives. This fosters a vibrant and active community while aligning the interests of stakeholders towards the platform’s success.
+
+## What's next for Surity
+
+⌛Integrate the functionality which is already being developed on the smart contract with the frontend and backend
+
+🧑‍💻Add functionality of Automated Investment of policy pool money in different tokens and integrate it with its already developed frontend. Make Surity fully functioning to support and work as an Telegram mini app
+
+🧑‍💻Implement Application and developer features within the Surity platform, enabling Developers to utilize the functionalities of Surity through APIs into their own applications. They can create their own websites which would list only their own policies. All these applications would be listed in the Application section to let consumers of Surity know about them.
+
